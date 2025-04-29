@@ -1,0 +1,77 @@
+.overlay-button {
+  position: absolute;
+  font-family: 'poppins', sans-serif;
+  z-index: 0;
+  background-color: #DE1587; /* Pink color */
+  color: #FFFFFF; /* White text */
+  padding: 16px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+/* For screens smaller than sm (max-width:576px): center horizontally */
+@media (max-width:576px) {
+  .overlay-button {
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 13px;
+    padding: 11px 11px;
+  }
+}
+
+/* Small screens */
+@media (min-width: 576px) and (max-width: 768px) {
+  .overlay-button {
+    top: 98%;
+    left: 80%;
+    transform: translate(-1%, -30%);
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .overlay-button {
+    top: 75%;
+    left: 80%;
+    transform: translate(-1%, 60%);
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) and (max-width: 1285px) {
+  .overlay-button {
+    top: 100%;
+    left: 85%;
+    transform: translate(0%, -40%);
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 1285px) and (max-width: 1366px) {
+  .overlay-button {
+    top: 100%;
+    left: 87%;
+    transform: translate(42%, -100%);
+    font-size: 16px;
+    padding: 14px 12px;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1600px) {
+  .overlay-button {
+    top: 100%;
+    left: 87%;
+    transform: translate(48%, -100%);
+    font-size: 16px;
+    padding: 14px 24px;
+    width: 180px;
+  }
+}
+
+.overlay-button:hover {
+  background-color: #DE1587;
+}

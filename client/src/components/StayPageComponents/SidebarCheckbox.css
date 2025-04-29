@@ -1,0 +1,151 @@
+/* Style the custom checkbox */
+.custom-staycheckbox {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #949293;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    display: inline-block;
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-right: 8px; /* Add spacing between checkbox and label */
+  }
+  
+  /* When checkbox is checked */
+  .custom-staycheckbox:checked {
+    background-color: #ec4899;
+    border-color: #ec4899;
+  }
+  
+  /* Create the white checkmark inside the checkbox */
+  .custom-staycheckbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 6px;
+    width: 6px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Focus styles */
+  .custom-staycheckbox:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(48, 47, 48, 0.4);
+  }
+  
+  /* Hover effect for the checkbox */
+  .custom-staycheckbox:hover {
+    border-color: rgba(61, 60, 61, 0.7);
+  }
+  
+  
+  /* Price Filter Styles */
+  .price-filter-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .price-filter-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #DE1587; /* Pink color for text */
+  }
+  
+  .price-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #DE1587 0%, #DE1587 var(--value), #e0e0e0 var(--value), #e0e0e0 100%);
+    outline: none;
+    transition: background 0.2s;
+  }
+  
+  .price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #DE1587; /* Pink color for thumb */
+    cursor: pointer;
+  }
+  
+  .price-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #DE1587; /* Pink color for thumb */
+    cursor: pointer;
+  }
+  
+  .price-range:hover {
+    opacity: 1;
+  }
+  
+  .price-range-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+     /* Pink color for labels */
+  }
+  
+  
+  
+  /* Distance Filter Styles */
+  .distance-filter-container {
+  margin-bottom: 1.5rem;
+  }
+  
+  .distance-filter-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #DE1587; /* Pink color for text */
+  }
+  
+  .distance-range {
+    -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #DE1587 50%, #e0e0e0 50%);
+  outline: none;
+  transition: background 0.2s
+  }
+  
+  .distance-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #DE1587; /* Pink color for thumb */
+  cursor: pointer;
+  }
+  
+  .distance-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #DE1587; /* Pink color for thumb */
+  cursor: pointer;
+  }
+  
+  .distance-range:hover {
+  opacity: 1;
+  }
+  
+  .distance-range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #5E5E5E; /* Gray color for labels */
+  }
+  

@@ -1,0 +1,38 @@
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+  
+}
+
+.rounded-container {
+  border-radius: 10px 10px 10px 10px ; /* Top-right corner rounded */
+  overflow: hidden; /* Ensures content respects the border-radius */
+  position: relative; /* Required for absolute positioning */
+  border: 1px solid #d1d5db; /* Optional: Match existing border styles */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.rounded-container-img {
+  padding: 0.7rem; /* Optional: spacing between image and container */
+  border-radius: 22px 22px 22px 22px !important;
+  object-fit: cover; /* Ensures proper image scaling */
+  width: 100%; /* Ensures the image fits the container width */
+  height: auto; /* Maintains aspect ratio */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
+}
+
+
+
+.rounded-button {
+  position: absolute;
+  top: 0.7rem; /* Adjust positioning */
+  right: 0.7rem; /* Adjust positioning */
+  border-radius: 0 10px 0 0; /* Matches container’s top-right corner */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.80rem; /* Match text size */
+}
+
+

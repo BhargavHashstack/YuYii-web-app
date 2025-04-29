@@ -1,0 +1,67 @@
+.custom-date-home {
+  font-family: 'Merriweather', sans-serif;
+  display: flex;
+  align-items: center;
+  
+}
+
+.custom-day-home {
+  padding-left: 0px;
+  font-size: 22px;
+  color: #000000;
+}
+
+.custom-month-home {
+  font-style: bold;
+  padding-top: 7px;
+  color: #000000;
+}
+
+.custom-year-home {
+  text-transform: uppercase;
+  padding-left: 4px;
+  padding-top: 5px;
+  color: #000000;
+}
+
+@media (min-width: 200px) and (max-width: 640px) { /* Adjust the max-width as needed for your breakpoint */
+  .custom-day-home {
+    padding-left: 4px;
+    padding-right:4px;
+
+    font-size: 16px; /* Make the day smaller */
+  }
+  
+  .custom-month-home,
+  .custom-year-home {
+    padding-top: 3px;
+    font-size: 14px; /* Adjust font sizes for month and year as needed */
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1540px ) { /* Adjust the max-width as needed for your breakpoint */
+  .custom-day-home {
+    padding-left: 4px;
+    padding-right:4px;
+    font-size: 22px; /* Make the day smaller */
+  }
+  
+  .custom-month-home,
+  .custom-year-home {
+    padding-top: 3px;
+    font-size: 14px; /* Adjust font sizes for month and year as needed */
+  }
+}
+
+
+/* Change selected date background to pink */
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover {
+  background-color: #de1587; /* Pink color */
+  color: #ffffff; /* White text color */
+}
+
+
+svg {
+  pointer-events: all;
+}

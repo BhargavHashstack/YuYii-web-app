@@ -1,0 +1,87 @@
+.text-overlay {
+    font-family: "Merriweather";
+    position: absolute;
+    bottom: 128px; /* 8rem = 128px */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px; /* 1.5rem = 24px */
+    font-weight: 600;
+    color: #ffffff;
+    
+    padding: 16px 32px; /* 1rem 2rem = 16px 32px */
+    border-radius: 8px;
+    z-index: 0;
+    
+    
+  }
+  
+  /* Larger screens (e.g., desktops) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .text-overlay {
+        font-family: "poppins";
+      font-size: 17px; /* 2rem = 32px */
+      bottom: 100px; /* 10rem = 160px */
+      padding: 8px 10px; /* 1.5rem 3rem = 24px 48px */
+      width:100%;
+      left:45%;
+      bottom:25%;
+      text-align: center;
+      transform: translateX(-45%);
+      color:black;
+      background: white;
+      border-radius: 0px;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 768px) {
+    .text-overlay {
+        font-family: "poppins";
+      font-size: 16px; /* 2rem = 32px */
+      bottom: 100px; /* 10rem = 160px */
+      padding: 8px 10px; /* 1.5rem 3rem = 24px 48px */
+      width:100%;
+      left:45%;
+      bottom:25%;
+      text-align: center;
+      transform: translateX(-45%);
+      color:black;
+      background: white;
+      border-radius: 0px;
+    }
+  }
+  
+  @media (min-width: 200px) and (max-width: 640px) {
+    .text-overlay {
+        font-family: "poppins";
+      font-size: 14px; /* 2rem = 32px */
+      bottom: 100px; /* 10rem = 160px */
+      padding: 8px 10px; /* 1.5rem 3rem = 24px 48px */
+      width:100%;
+      left:45%;
+      bottom:25%;
+      text-align: center;
+      transform: translateX(-45%);
+      color:black;
+      background: white;
+      border-radius: 0px;
+    }
+  }
+
+
+  /* Extra-large screens */
+  @media (min-width: 1023px) {
+    .text-overlay {
+      font-size: 20px; /* 2.5rem = 40px */
+      bottom: 100px; /* 12rem = 192px */
+      padding: 8px 10px; /* 2rem 4rem = 32px 64px */
+      width: 100%;
+      left:32%;
+      bottom:18%;
+      text-align: center;
+      transform: translateX(-45%);
+    }
+  }
+  
+  
+  

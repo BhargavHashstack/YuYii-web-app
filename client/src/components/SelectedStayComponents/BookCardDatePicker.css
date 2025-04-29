@@ -1,0 +1,50 @@
+.custom-date {
+    font-family:'poppins';
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .custom-day {
+    padding-left: 0px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .custom-month {
+    font-style: bold;
+    padding-top: 0px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .custom-year {
+    text-transform: uppercase;
+    padding-left: 4px;
+    padding-top: 0px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  @media (min-width: 200px) and (max-width: 640px ) { /* Adjust the max-width as needed for your breakpoint */
+    .custom-day {
+      padding-left: 0px;
+      font-size: 14px; /* Make the day smaller */
+    }
+    
+    .custom-month,
+    .custom-year {
+      padding-top: 0px;
+      font-size: 14px; /* Adjust font sizes for month and year as needed */
+    }
+  }
+
+
+  
+  /* Change selected date background to pink */
+  .react-datepicker__day--selected,
+  .react-datepicker__day--selected:hover {
+    background-color: #de1587; /* Pink color */
+    color: #ffffff; /* White text color */
+  }
+  

@@ -1,0 +1,39 @@
+.gallery-container {
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.tabs button {
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+  color: #e91e63;
+}
+
+.tabs button.text-pink-500 {
+  font-weight: 500;
+}
+
+/* Grid Styling */
+.grid img {
+  width: 100%; /* Ensure full width of the grid cell */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image scales proportionally without distortion */
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (min-width: 200px) and (max-width: 430px) {
+
+  .tabs button {
+  padding: 8px 4px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  }
+}

@@ -1,0 +1,51 @@
+{
+    "name": "iuyui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon property-api/server.js",
+        "start": "node property-api/server.js",
+        "build": "npm install && npm install --prefix client && npm run build --prefix client",
+        "keywords": [],
+        "author": "",
+        "license": "ISC"
+    },
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.779.0",
+        "@aws-sdk/s3-request-presigner": "^3.779.0",
+        "@babel/preset-env": "^7.26.9",
+        "@babel/preset-react": "^7.26.3",
+        "@babel/register": "^7.25.9",
+        "@heroicons/react": "^2.2.0",
+        "@react-google-maps/api": "^2.20.3",
+        "@reduxjs/toolkit": "^2.5.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.3",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "firebase": "^11.1.0",
+        "firebase-admin": "^13.0.2",
+        "font-awesome": "^4.7.0",
+        "jsonwebtoken": "^9.0.2",
+        "lodash": "^4.17.21",
+        "mongoose": "^8.13.2",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.10.0",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-phone-number-input": "^3.4.10",
+        "react-redux": "^9.2.0",
+        "react-slick": "^0.30.3",
+        "slick-carousel": "^1.8.1",
+        "tailwindcss": "^3.4.17",
+        "twilio": "^5.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9",
+        "rollup-plugin-visualizer": "^5.12.0"
+    }
+}

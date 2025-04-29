@@ -1,0 +1,21 @@
+/* Apply styles to the input element inside the phone input wrapper */
+.phone-input input,
+.phone-input input[type="text"] {
+    border: 1px solid #d1d5db; /* Tailwind's gray-300 border color */
+    height: 50px; /* Set a height */
+    width: 100% !important; /* Make it responsive */
+    padding: 0 10px; /* Adjust horizontal padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Styling the container of PhoneInput */
+.phone-input {
+    width: 100% !important; /* Ensure it takes full width */
+    max-width: 400px !important; /* Optional: set max-width */
+    margin-bottom: 20px !important; /* Optional: space below */
+}
+
+/* Optional: Adjust dropdown (flag selection) styles */
+.phone-input .react-tel-input .selected-flag {
+    margin-right: 10px; /* Add space between flag and input */
+}
